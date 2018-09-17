@@ -6,6 +6,8 @@ management:
 spring:
   application:
    name: server
+  profiles:
+    active: server1
 eureka:
   instance:
     prefer-ip-address: true
@@ -14,5 +16,5 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
   server:
-    enable-self-preservation: false
+    enable-self-preservation: true
     renewal-percent-threshold: 0.85
