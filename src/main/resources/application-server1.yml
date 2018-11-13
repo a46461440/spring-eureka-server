@@ -1,8 +1,0 @@
-server:
-  port: 11111
-eureka:
-  instance:
-    hostname: server1
-  client:
-    service-url:
-      defaultZone: http://server2:11112/eureka
